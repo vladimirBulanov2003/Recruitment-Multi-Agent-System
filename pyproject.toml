@@ -1,0 +1,41 @@
+[project]
+name = "maya-ai-prototype"
+version = "0.1.0"
+description = "Add your description here"
+dependencies = [
+    "fastapi>=0.116.1",
+    "httpx>=0.28.1",
+    "pydantic>=2.11.7",
+    "linkedin-scraper>=2.11.5",
+    "selenium>=4.35.0",
+    "openai>=1.102.0",
+    "uvicorn>=0.35.0",
+    "numpy>=2.3.2",
+    "streamlit>=1.50.0",
+    "google-adk>=1.13.0",
+    "litellm>=1.76.2",
+    "pika>=1.3.2",
+    "reactivex>=4.0.4",
+    "pylint>=3.3.8",
+    "streamlit-autorefresh>=1.0.1",
+    "apscheduler>=3.11.0",
+    "fastapi-swagger-dark>=0.0.7",
+    "faker>=37.12.0",
+    "google>=3.0.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/maya_ai"]

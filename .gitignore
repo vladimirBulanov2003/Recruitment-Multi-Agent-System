@@ -1,0 +1,22 @@
+.env
+.env.local
+config/secrets.py
+*.log
+
+# python generated files
+__pycache__/
+*.py[oc]
+*.pyc
+build/
+dist/
+wheels/
+*.egg-info/
+
+# venv
+.venv
+venv/
+env/
+
+# OS files
+.DS_Store
+.python-version
